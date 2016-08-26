@@ -15,10 +15,11 @@ public class LocalJson : MonoBehaviour {
 		public string option_D;
 		public string ans;
 	}
-
 	public static void AddressToClass(string address){
+		//load txt from Resources
 		_txtJson = Resources.Load(address) as TextAsset;
+
+		//transform txt to json object(QuestionData[])
 		qDatas = JsonReader.Deserialize<QuestionData[]>(_txtJson.text);
 	}
-	
 }
