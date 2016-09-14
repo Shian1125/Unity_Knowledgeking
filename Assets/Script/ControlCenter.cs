@@ -4,13 +4,28 @@ using UnityEngine.UI;
 
 public class ControlCenter : MonoBehaviour {
 
+	//ui
 	public Text _describe;
 	public Text[] _options = new Text[4];
-	public int questionNum;
-	public string _ans;
+	public Slider _sliderPlayer;
+	public Slider _sliderAI;
+	Text _sliderTextPlayer;
+	Text _sliderTextAI;
+	//score data
+	public float _totalPoint;
+	public float _correctPoint;
+	public float _curScorePlayer = 0;
+	public float _curScoreAI = 0;
+	//question data
+	public int _curQuesNo;
+	public string _curAns;
 	// Use this for initialization
 	void Start () {
 		_options = GameObject.Find("Options").GetComponentsInChildren<Text>();
+		_sliderTextPlayer = _sliderPlayer.gameObject.transform.FindChild("Text").GetComponent<Text>();
+		_sliderTextAI = _sliderAI.gameObject.transform.FindChild("Text").GetComponent<Text>();
+		RefreshUI();
+		Btn_Start();
 	}
 	
 	// Update is called once per frame
@@ -18,7 +33,7 @@ public class ControlCenter : MonoBehaviour {
 	
 	}
 	public void Btn_Start(){
-		LoadQuestion(questionNum);
+		LoadQuestion(_curQuesNo);
 	}
 	void LoadQuestion(int num){
 		if(LocalJson.qDatas == null){
@@ -37,11 +52,43 @@ public class ControlCenter : MonoBehaviour {
 			_options[2].text = qData.option_C;
 			_options[3].text = qData.option_D;
 			//load ans
-			_ans = qData.ans;
+			_curAns = qData.ans;
+			Debug.Log("Load Question No: " + _curQuesNo);
+			_curQuesNo = num;
 		}else{
 			Debug.Log("num is out of range");
 		}
 		
 
+	}
+	//處理答案判斷
+	public void SentAnswer(string option){
+		if(option == _curAns){
+			Debug.Log("correct");
+			//add points
+			CountScore(true);
+			//load next question
+			LoadQuestion(_curQuesNo + 1);
+		}else{
+			Debug.Log("wrong");
+			CountScore(false);
+		}
+			
+	}
+	//分數計算
+	void CountScore(bool isCorr){
+		if(isCorr)
+			_curScorePlayer += _correctPoint;
+		RefreshUI();
+	}
+	public void Btn_OptionA(){	SentAnswer("A");	}
+	public void Btn_OptionB(){	SentAnswer("B");	}
+	public void Btn_OptionC(){	SentAnswer("C");	}
+	public void Btn_OptionD(){	SentAnswer("D");	}
+	void RefreshUI(){
+		_sliderPlayer.value = _curScorePlayer / _totalPoint;
+		_sliderTextPlayer.text = _curScorePlayer.ToString();
+		_sliderAI.value = _curScoreAI / _totalPoint;
+		_sliderTextAI.text = _curScoreAI.ToString();
 	}
 }

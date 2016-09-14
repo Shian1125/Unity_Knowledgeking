@@ -1,29 +1,92 @@
 [
   {
     "id":"0",
-    "describe": "questionA",
-    "option_A": "this is qA_A",
-    "option_B": "this is qA_B",
-    "option_C": "this is qA_C",
-    "option_D": "this is qA_D",
-    "ans":"A"
-  },
-  {
-    "id":"1",
-    "describe": "questionB",
-    "option_A": "this is qB_A",
-    "option_B": "this is qB_B",
-    "option_C": "this is qB_C",
-    "option_D": "this is qB_D",
+    "describe": "佛教的梁皇法會是跟哪一位皇帝有關？",
+    "option_A": "溥儀",
+    "option_B": "唐太宗",
+    "option_C": "南梁武帝蕭衍",
+    "option_D": "漢武帝",
     "ans":"C"
   },
   {
+    "id":"1",
+    "describe": "外來語[沙龍]是由哪國語言傳入",
+    "option_A": "法語",
+    "option_B": "德語",
+    "option_C": "英語",
+    "option_D": "西班牙語",
+    "ans":"A"
+  },
+  {
     "id":"2",
-    "describe": "questionC",
-    "option_A": "this is qC_A",
-    "option_B": "this is qC_B",
-    "option_C": "this is qC_C",
-    "option_D": "this is qC_D",
+    "describe": "[相對論]是哪個學者發表出的論文?",
+    "option_A": "愛因斯坦",
+    "option_B": "居禮夫人",
+    "option_C": "萊特兄弟",
+    "option_D": "村上春樹",
+    "ans":"A"
+  },
+  {
+    "id":"3",
+    "describe": "請問12生肖裡面的羊排第幾名？",
+    "option_A": "10",
+    "option_B": "6",
+    "option_C": "7",
+    "option_D": "8",
+    "ans":"D"
+  },
+  {
+    "id":"4",
+    "describe": "142857 x 7 = ?",
+    "option_A": "996999",
+    "option_B": "997999",
+    "option_C": "998999",
+    "option_D": "999999",
+    "ans":"D"
+  },
+  {
+    "id":"5",
+    "describe": "唐太宗李世民的哥哥為下列何者？",
+    "option_A": "李淵",
+    "option_B": "李建成",
+    "option_C": "李玄霸",
+    "option_D": "李元吉",
+    "ans":"B"
+  },
+  {
+    "id":"6",
+    "describe": "下列何者並非台鐵的「特等站」？",
+    "option_A": "台北",
+    "option_B": "台中",
+    "option_C": "台南",
+    "option_D": "花蓮",
+    "ans":"C"
+  },
+  {
+    "id":"7",
+    "describe": "雪山隧道位在台灣哪一條國道上？",
+    "option_A": "國道2號",
+    "option_B": "國道3號",
+    "option_C": "國道5號",
+    "option_D": "國道6號",
+    "ans":"C"
+  },
+  {
+    "id":"8",
+    "describe": "小於100的質數共有幾個？",
+    "option_A": "24",
+    "option_B": "25",
+    "option_C": "26",
+    "option_D": "27",
+    "ans":"B"
+  },
+  {
+    "id":"9",
+    "describe": "下列何者為三國演義中「五虎上將」之一？",
+    "option_A": "姜維",
+    "option_B": "馬超",
+    "option_C": "嚴顏",
+    "option_D": "黃忠",
     "ans":"D"
   }
 ]
