@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id":"0",
     "describe": "佛教的梁皇法會是跟哪一位皇帝有關？",
@@ -6,7 +6,7 @@
     "option_B": "唐太宗",
     "option_C": "南梁武帝蕭衍",
     "option_D": "漢武帝",
-    "ans":"C"
+    "ans":"3"
   },
   {
     "id":"1",
@@ -15,7 +15,7 @@
     "option_B": "德語",
     "option_C": "英語",
     "option_D": "西班牙語",
-    "ans":"A"
+    "ans":"1"
   },
   {
     "id":"2",
@@ -24,7 +24,7 @@
     "option_B": "居禮夫人",
     "option_C": "萊特兄弟",
     "option_D": "村上春樹",
-    "ans":"A"
+    "ans":"1"
   },
   {
     "id":"3",
@@ -33,7 +33,7 @@
     "option_B": "6",
     "option_C": "7",
     "option_D": "8",
-    "ans":"D"
+    "ans":"4"
   },
   {
     "id":"4",
@@ -42,7 +42,7 @@
     "option_B": "997999",
     "option_C": "998999",
     "option_D": "999999",
-    "ans":"D"
+    "ans":"4"
   },
   {
     "id":"5",
@@ -51,7 +51,7 @@
     "option_B": "李建成",
     "option_C": "李玄霸",
     "option_D": "李元吉",
-    "ans":"B"
+    "ans":"2"
   },
   {
     "id":"6",
@@ -60,7 +60,7 @@
     "option_B": "台中",
     "option_C": "台南",
     "option_D": "花蓮",
-    "ans":"C"
+    "ans":"3"
   },
   {
     "id":"7",
@@ -69,7 +69,7 @@
     "option_B": "國道3號",
     "option_C": "國道5號",
     "option_D": "國道6號",
-    "ans":"C"
+    "ans":"3"
   },
   {
     "id":"8",
@@ -78,7 +78,7 @@
     "option_B": "25",
     "option_C": "26",
     "option_D": "27",
-    "ans":"B"
+    "ans":"2"
   },
   {
     "id":"9",
@@ -87,6 +87,6 @@
     "option_B": "馬超",
     "option_C": "嚴顏",
     "option_D": "黃忠",
-    "ans":"D"
+    "ans":"4"
   }
 ]
